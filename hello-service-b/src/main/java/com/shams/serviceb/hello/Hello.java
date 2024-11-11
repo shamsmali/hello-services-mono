@@ -1,4 +1,4 @@
-package com.shams.servicea.hello;
+package com.shams.serviceb.hello;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -44,7 +44,7 @@ public class Hello {
     @Override
     public void handle(HttpExchange t) throws IOException {
       System.out.println("Handling request from " + t.getRemoteAddress().getHostString());
-      String response = "This is the response from service-c from env = " + this.env;
+      String response = "This is the response from service-b from env = " + this.env;
       t.sendResponseHeaders(200, response.length());
       OutputStream os = t.getResponseBody();
       os.write(response.getBytes());

@@ -6,7 +6,9 @@ for i in $(ls -d */);
 do 
     echo "building repo ${i%/}"; 
     cd ${i%/} && 
-    ./gradlew clean build jar
+    ./gradlew clean
+    ./gradlew build
+    ./gradlew jar
     docker build -t shamsmali/${i%/}:${value} .;
     docker push shamsmali/${i%/}:${value};    
     cd ..

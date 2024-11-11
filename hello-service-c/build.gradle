@@ -2,11 +2,11 @@ plugins {
     id 'java'
 }
 
-group 'com.shams.servicea'
+group 'com.shams.servicec'
 
 jar {
     manifest {
-        attributes 'Main-Class': 'com.shams.servicea.hello.Hello'
+        attributes 'Main-Class': 'com.shams.servicec.hello.Hello'
     }
 }
 

@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: com.shams.servicea.hello.Hello
+Main-Class: com.shams.serviceb.hello.Hello
 
