@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.shams.servicea'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.shams.servicea.hello.Hello'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
