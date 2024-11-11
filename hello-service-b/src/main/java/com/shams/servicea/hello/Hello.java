@@ -10,7 +10,7 @@ import java.net.InetSocketAddress;
 public class Hello {
   public static void main(String[] args) throws Exception {
     String env = System.getenv("env");
-    System.out.println("Starting main program .... ");
+    System.out.println("Starting main program with env = " + env);
     HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
     server.createContext("/", new MyHandler(env));
     server.createContext("/ping", new PingHandler());
